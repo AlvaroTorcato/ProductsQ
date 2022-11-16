@@ -13,9 +13,9 @@ public class ProductQApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProductQApplication.class, args);
     }
-    @Bean(initMethod = "start", destroyMethod = "stop")
+   /* @Bean(initMethod = "start", destroyMethod = "stop")
     public Server inMemoryH2DatabaseServer() throws SQLException {
         return Server.createTcpServer("-tcp", "-tcpAllowOthers", "-tcpPort", "9081");
     }
-
+*/
 }
