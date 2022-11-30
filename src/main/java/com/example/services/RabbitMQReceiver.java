@@ -4,12 +4,14 @@ import com.example.model.Product;
 import com.example.repositories.ProductRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+@EnableRabbit
 @Component
-@RabbitListener(queues = "rabbitmq.queue", id = "listener")
+@RabbitListener(queues = "products1_queue_fanout", id = "listener")
 public class RabbitMQReceiver {
     @Autowired
     ProductRepository repository;
