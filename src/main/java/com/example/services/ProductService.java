@@ -1,9 +1,9 @@
-package com.example.productq.services;
+package com.example.services;
 
-import com.example.productq.model.Product;
-import com.example.productq.model.ProductDTO;
-import com.example.productq.model.ProductDetailsDTO;
-import com.example.productq.repositories.ProductRepository;
+import com.example.model.Product;
+import com.example.model.ProductDTO;
+import com.example.model.ProductDetailsDTO;
+import com.example.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

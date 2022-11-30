@@ -1,4 +1,4 @@
-package com.example.productq.model;
+package com.example.model;
 
 public class UploadFileResponse {
     private final String fileName;

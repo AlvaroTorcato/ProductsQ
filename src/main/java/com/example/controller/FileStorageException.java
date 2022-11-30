@@ -1,4 +1,4 @@
-package com.example.productq.controller;
+package com.example.controller;
 
 public class FileStorageException extends RuntimeException {
     public FileStorageException(String message) {

@@ -1,8 +1,8 @@
-package com.example.productq.controller;
+package com.example.controller;
 
-import com.example.productq.model.ProductDTO;
-import com.example.productq.model.ProductDetailsDTO;
-import com.example.productq.services.ProductService;
+import com.example.model.ProductDTO;
+import com.example.model.ProductDetailsDTO;
+import com.example.services.ProductService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;

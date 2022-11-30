@@ -1,4 +1,4 @@
-package com.example.productq.model;
+package com.example.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -89,5 +89,14 @@ public class Product implements Serializable {
 
     public void addImages(String string){
         images.add(string);
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "sku='" + sku + '\'' +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

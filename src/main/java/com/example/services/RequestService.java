@@ -1,7 +1,7 @@
-package com.example.productq.services;
+package com.example.services;
 
-import com.example.productq.model.ProductAPOD;
-import com.example.productq.model.ProductDetailsDTO;
+import com.example.model.ProductAPOD;
+import com.example.model.ProductDetailsDTO;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
 

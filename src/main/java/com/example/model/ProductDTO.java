@@ -1,4 +1,4 @@
-package com.example.productq.model;
+package com.example.model;
 
 public class ProductDTO {
     String sku;

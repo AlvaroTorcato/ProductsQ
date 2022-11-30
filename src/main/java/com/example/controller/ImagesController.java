@@ -1,7 +1,7 @@
-package com.example.productq.controller;
+package com.example.controller;
 
-import com.example.productq.model.UploadFileResponse;
-import com.example.productq.services.FileStorageService;
+import com.example.model.UploadFileResponse;
+import com.example.services.FileStorageService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.slf4j.Logger;

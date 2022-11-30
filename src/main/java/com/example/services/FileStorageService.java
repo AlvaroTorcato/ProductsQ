@@ -1,11 +1,11 @@
-package com.example.productq.services;
+package com.example.services;
 
 
-import com.example.productq.controller.FileStorageException;
-import com.example.productq.controller.MyFileNotFoundException;
-import com.example.productq.model.ProductDetailsDTO;
-import com.example.productq.model.UserDetailsDTO;
-import com.example.productq.repositories.ProductRepository;
+import com.example.controller.FileStorageException;
+import com.example.controller.MyFileNotFoundException;
+import com.example.model.ProductDetailsDTO;
+import com.example.model.UserDetailsDTO;
+import com.example.repositories.ProductRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import net.sourceforge.barbecue.Barcode;
 import net.sourceforge.barbecue.BarcodeFactory;
