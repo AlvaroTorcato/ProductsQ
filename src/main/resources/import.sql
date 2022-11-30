@@ -1,4 +1,4 @@
-insert into products (sku, name, description) values ('cBKhdYE37I64','BOLACHA DO LIDL','MELHOR PEQUENO ALMOCO DE SEMPRE E LANCHE E JANTAR E ALMOÇO E TUDO');
+/*insert into products (sku, name, description) values ('cBKhdYE37I64','BOLACHA DO LIDL','MELHOR PEQUENO ALMOCO DE SEMPRE E LANCHE E JANTAR E ALMOÇO E TUDO');
 insert into products (sku, name, description) values ('vpOkPKUOUH02','BOLACHA DE OUTRAS MARCAS','Pior que as do Lidl');
 insert into products (sku, name, description) values ('Nhv6LRuZpj11','MAÇAS','Maças de grande qualidade');
 insert into products (sku, name, description) values ('K5Jl6BIdeH16','UVAS','Melhores uvas alguma vez ja colhidas');
@@ -9,3 +9,4 @@ insert into products (sku, name, description) values ('MiZuT7VWJT46','VASSOURA',
 insert into products (sku, name, description) values ('iSh0kUzHCn73','LEITE','Leite das melhores vacas de Rabo de Peixe, Açores');
 insert into products (sku, name, description) values ('xYiBwtl4nC27','AVEIA','Comida de passaro para pessoas');
 
+*/
