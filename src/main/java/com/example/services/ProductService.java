@@ -35,10 +35,7 @@ public class ProductService {
     public ProductDetailsDTO findProductBySku(String sku) throws IOException {
         ProductDetailsDTO product = repository.findProductBySku(sku);
         if (product == null){
-            product=service.retrieveProductFromApi(sku);
-            if (product == null) {
-                throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Product Not Found ");
-            }
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Product Not Found ");
         }
         return product;
     }
@@ -51,14 +48,6 @@ public class ProductService {
             products = productPage.getContent();
         }
         return products;
-    }
-    public void addImage(String fileName,String sku){
-        Product product = repository.findBySkuProduct(sku);
-        if (product == null){
-            throw  new ResponseStatusException(HttpStatus.NOT_FOUND, "Product Not Found ");
-        }
-        product.addImages(fileName);
-        repository.save(product);
     }
 
 }
