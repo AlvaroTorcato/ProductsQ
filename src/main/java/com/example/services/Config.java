@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class Config {
-
+/*
 	@Value("${queue.name}")
 	private String queueName;
 
@@ -36,5 +36,5 @@ public class Config {
 	public Server server() {
 		return new Server();
 	}
-
+*/
 }
