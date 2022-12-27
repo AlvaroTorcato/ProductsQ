@@ -4,6 +4,7 @@ import com.example.model.Product;
 import com.example.model.ProductDTO;
 import com.example.model.ProductDetailsDTO;
 import com.example.repositories.ProductRepository;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -48,6 +49,10 @@ public class ProductService {
             products = productPage.getContent();
         }
         return products;
+    }
+    public void createProduct(Product product) throws JsonProcessingException {
+        ProductDetailsDTO productDetailsDTO = repository.findProductBySku(product.getSku());
+        if (productDetailsDTO == null) repository.save(product);
     }
 
 }
