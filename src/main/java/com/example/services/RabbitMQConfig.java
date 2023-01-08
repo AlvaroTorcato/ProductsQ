@@ -33,4 +33,9 @@ public class RabbitMQConfig {
         return BindingBuilder.bind(autoDeleteQUeue).to(fanout);
     }
 
+    @Bean
+    public DirectExchange directExchange () {
+        return new DirectExchange("product");
+    }
+
 }
