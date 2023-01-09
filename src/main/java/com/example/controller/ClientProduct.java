@@ -17,7 +17,7 @@ public class ClientProduct {
     private DirectExchange directExchange;
     public List<Product> send() {
         int n= 0;
-        List<Product> response = (List<Product>) rabbitTemplate.convertSendAndReceive(directExchange.getName(),"Product", n);
+        List<Product> response = (List<Product>) rabbitTemplate.convertSendAndReceive(directExchange.getName(),"product", n);
 
         System.out.println("Got " + response + "");
         return response;
